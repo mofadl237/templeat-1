@@ -1,0 +1,626 @@
+*{
+      padding:0;
+      margin:0;
+      box-sizing: border-box;
+}
+.container{
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      /* width: 600px; */
+       
+ }
+@media (min-width:768px){
+      .container{
+            width:750px
+      }
+}
+@media (min-width:992px){
+      .container{
+            width:960px
+      }
+}
+@media (min-width:1200px){
+      .container{
+            width:1170px
+      }
+}
+
+header{
+      padding:20px;
+      /* height:64px; */
+      
+}
+header .container{
+        height:64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+}
+header .container .logo img{
+      width:160px;
+      height:40px;
+}
+header .container .links{
+      position: relative;
+}
+header .container .links .icon{
+      width:35px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      
+}
+/* header .container .links .icon:hover #two{
+      width: 100%;
+} */
+/*انا عامله كمان بالجافا عشان مايتشالش بعد مايعدي السهم*/
+header .container .links .icon span{
+      height:2px;
+      width:100%;
+      margin-bottom: 5px;
+      background-color: #333;
+}
+/* header .container .links .icon span*/ #two{ 
+      width:60%;
+      transition:.5s;
+      -webkit-transition:.5s;
+      -moz-transition:.5s;
+      -ms-transition:.5s;
+      -o-transition:.5s;
+}
+header .container .links ul{
+     min-width:200px;
+      background-color: #f6f6f6;
+      right:0;
+      top:35px;
+      position: absolute;
+      list-style: none;
+      display: none;
+      z-index: 10;
+}
+header .container .links ul li {
+      padding:15px;
+     
+}
+header .container .links ul li a{
+      color:#333;
+      text-decoration: none;
+      transition: .5S;
+      -webkit-transition: .5S;
+      -moz-transition: .5S;
+      -ms-transition: .5S;
+      -o-transition: .5S;
+}
+header .container .links ul li a:hover{
+      padding-left: 25px;
+}
+header .container .links ul li:not(:last-child){
+      border-bottom: 1px solid #333;
+}
+header .container .links ul:after{
+      position: absolute;
+      content:"";
+      border-width: 20px;
+      top: -40px;
+      right: 15px;
+      border-style: solid;
+      border-color: transparent transparent #f6f6f6 transparent;
+}
+/* header .container .links:hover ul{
+      display: block;
+} *//*عملته بالجافا اسكريبت*/
+/*End Header*/
+/*Start Main*/
+main{
+      background-image: url(../image/bac3.jpg);
+      height:85vh;
+      width:100vw;
+      background-size:100% 100%;
+      position: relative;
+}
+.over-lay{
+      position: absolute;
+      top:0;
+      right:0;
+      left:0;
+      bottom:0;
+      background-color: rgba(11, 11, 11, 0.5);
+}
+.hello{
+      width:300px;
+      max-width: 100%;
+      position: absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      -webkit-transform:translate(-50%,-50%);
+      -moz-transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);
+      -o-transform:translate(-50%,-50%);
+      text-align: center;
+}
+.hello h2{
+      color:#10CAB7;
+      font-weight: 800;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 40px;
+
+}
+.hello p{
+      line-height: 1.6;
+      word-spacing: 3px;
+      padding:8px;
+      color:#080808;
+      font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*END MAIN*/
+/*Start Section One*/
+.sec1{
+      width:100vw;
+      z-index: 2;
+      background:#e8e2e2;
+      color:#333;
+      position: relative;
+     padding-top:60px;
+     padding-bottom: 60px
+    
+}
+.sec1 .container{
+      display: grid;
+      gap: 20px;
+      text-align: center;
+      grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+}
+.sec1 .container div{
+     position: relative;
+     padding:40px;
+     padding-top: 40px;
+     padding-bottom: 30px;
+     transition: .5s;
+     -webkit-transition: .5s;
+     -moz-transition: .5s;
+     -ms-transition: .5s;
+     -o-transition: .5s;
+}
+.sec1 .container div::after{
+      position: absolute;
+      content:" ";
+      top:0;
+      left:0;
+      height:0%;
+      width:0;
+      background-color: #0c0c0c;
+    
+      z-index: -1;
+      transition:1.5s;
+      -webkit-transition:1.5s;
+      -moz-transition:1.5s;
+      -ms-transition:1.5s;
+      -o-transition:1.5s;
+}
+.sec1 .container div:hover::after{
+     /* opacity: .5; */
+      width:100%;
+      height:100%;
+     
+
+}
+.sec1 .container div i{
+      font-size: 60px;
+      color:#10CAB7;
+      padding-top: 10px;
+      padding-bottom: 20px;
+}
+.sec1 .container div h3{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 20px;
+      line-height: 1.6;
+      font-weight: 800;
+}
+.sec1 .container div:hover h3{
+      color:white;
+      transition:2s;
+      -webkit-transition:2s;
+      -moz-transition:2s;
+      -ms-transition:2s;
+      -o-transition:2s;
+}
+.sec1 .container div p{
+      padding:10px;
+      line-height: 1.5;
+      font-family: Arial, Helvetica, sans-serif;
+}
+/**End Section one*/
+
+
+
+
+
+
+
+
+/*start services*/
+.special-heading{
+      color:#EBECED;
+      font-size: 100px;
+      font-weight: 800;
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.special-heading+p{
+      margin:-30px;
+      font-size: 19px;
+      text-align: center;
+      color:#555;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+@media (max-width:767px){
+      .special-heading{
+            font-size: 60px;
+      }
+      .special-heading+p{
+            margin: -25px;
+      }
+      .services .container .col [class ^= "child"]{
+            flex-direction: column;
+            text-align: center;
+      }
+      .services .container .col .text p{
+            padding:0px 20px;
+      }
+     
+}
+.services{
+     
+     padding:60px 0px;
+}
+.services .container{
+      margin-top: 120px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+      grid-gap:30px ;
+}
+
+.services .container .col [class ^= "child"]{
+      margin-bottom: 40px;
+      display: flex;
+     
+      
+}
+
+.services .container .col .text{
+      flex:1;
+}
+.services .container .col .text h2{
+      margin: 0 0 20px;
+}
+.services .container .col [class|="child"]:hover h2{
+      color:white
+}
+.services .container .col .text p{
+      color: #444;
+  font-weight: 300;
+  
+}
+.services .container .col [class ^= "child"] i{
+    flex-basis: 60px;
+    font-size: 30px;
+      color:#10CAB7;
+      
+}
+.services .container [class |="child"]{
+      position:relative;
+      padding:15px;
+}
+.services .container [class |="child"]::after{
+      position: absolute;
+      content:" ";
+      width:100%;
+      height:0;
+      top:0;
+      right:0;
+      background-color: #5c82cd;
+      z-index: -1;
+      transition:.5s;
+      -webkit-transition:.5s;
+      -moz-transition:.5s;
+      -ms-transition:.5s;
+      -o-transition:.5s;
+}
+.services .container [class |="child"]:hover::after{
+      width:100%;
+      height: 100%;
+      transition: 1s;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -ms-transition: 1s;
+      -o-transition: 1s;
+}
+.three .image {
+      position: relative;
+      margin-left: 50px;
+      
+}
+.three .image::after{
+      position: absolute;
+      content:" ";
+      height: 120%;
+      background-color: #0c0c0c;
+      width:90px;
+      top:-10%;
+     right:35px;
+      z-index: -1;
+}
+
+.three .image img{
+      max-width: 100%;
+      height:50vh;
+      width:250px;
+      
+}
+@media (max-width:1199px)
+{
+      .three .image{
+            display: none;
+      }
+}
+/*End services*/
+
+/*Start Section protofoli*/
+#portfolio{
+     padding-bottom:60px;
+     padding-top:60px;
+      background-color: #f6f6f6;
+}
+#portfolio .container{
+      margin-top: 100px;
+      display: grid;
+      grid-gap:30px;
+      grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+#portfolio .container .div1{
+      background-color: white;
+      
+}
+#portfolio .container .div1 .text{
+      padding:15px;
+      margin-top: -6px;
+}
+#portfolio .container .div1 .text h3{
+      margin-top: 0;
+      margin-bottom: 7px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#portfolio .container .div1 .text p{
+      font-family: Arial, Helvetica, sans-serif;
+}
+#portfolio .container .div1 img{
+      max-width: 100%;
+}
+
+
+
+
+/*EndSection protofoli*/
+
+
+/*Start about*/
+
+#about{
+      padding-top:60px;
+      padding-bottom:60px;
+
+}
+#about .container{
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      
+}
+#about .container .content{
+      flex-basis: 600px;
+      padding:10px;
+}
+#about .container .content .p1{
+      font-size: 20px;
+      font-weight: 900px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-bottom: 30px;
+     
+}
+#about .container .content hr{
+      width:40%;
+    background-color: #10CAB7;
+    height:2px;
+    border:none;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+#about .container .content .p2{
+      font-family: Arial, Helvetica, sans-serif;
+      color:#888;
+      line-height: 1.5;
+}
+#about .container .image {
+      width:300px;
+      height:350px;
+      margin-bottom: 50px;
+      position: relative;
+}
+#about .container .image img{
+      max-width: 100%;
+      max-height: 100%;
+}
+#about .container .image:after{
+      position: absolute;
+      content:" ";
+      width:80px;
+      height:calc(100% + 100px);
+      top:-50px;
+      left:-20px;
+      z-index: -1;
+      background-color: #f6f6f6;
+}
+#about .container .image:before{
+      position: absolute;
+      content:" ";
+      border-left:60px solid #10CAB7;
+      border-bottom:60px solid #10CAB7;
+      top:-46px;
+      height:70%;
+      width:30%;
+      right:-46px;
+      z-index: -1;
+}
+
+@media (max-width:991px){
+      #about .container .image{
+           margin: 0px auto;
+      }
+     
+}
+@media (max-width:1199px){
+      #about .container .image:after ,#about .container .image:before{
+            display: none;
+      }
+}
+
+/*END about*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*start Section contact*/
+#Contact{
+      background-color: #f6f6f6;
+      padding-top:60px;
+      padding-bottom: 60px;
+}
+#Contact .container{
+      margin-top: 100px;
+      text-align: center;
+}
+#Contact .container h2{
+      color:#2C4755;
+      font-size: 35px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-bottom: 25px;
+}
+#Contact .container h5{
+      margin-bottom: 20px;
+}
+
+#Contact .container h5 a{
+      font-size: 35px;
+      font-weight: 800;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color:#10CAB7;
+      text-decoration: none;
+     
+}
+#Contact .container p{
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width:586px){
+     
+      #Contact .container h5 a{
+            font-size: 23px;
+        
+            font-family:Arial, Helvetica, sans-serif;
+            color:#10CAB7;
+            text-decoration: none;
+           
+      }
+      #Contact .container p{
+            font-size: 19px;
+      }
+      .hello h2{
+            color:#10CAB7;
+            font-weight: 800;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 23px;
+      }
+      .hello p{
+            font-size: 15px;
+      }
+
+}
+@media (max-width:767px){
+      #Contact .container h2{
+            font-size: 26px;
+            font-weight: 700;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:#2C4755;
+            text-decoration: none;
+           
+      }
+      #Contact .container h5 a{
+            font-size: 28px;
+        
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:#10CAB7;
+            text-decoration: none;
+           
+      }
+      #Contact .container p{
+            font-size: 19px;
+      }
+}
+
+/*start Footer*/
+footer{
+      background-color: #2C4755;
+     text-align: center; 
+     padding:45px;
+     
+}
+footer h4{
+      font-size: 22px;
+      color:white;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+footer .soc ul{
+      list-style: none;
+      margin-top: 20px;
+
+}
+footer .soc ul li{
+      display: inline-block;
+      margin-left: 15px;
+}
+footer .soc ul li i{
+      font-size: 40px;
+      color:white
+}
+footer .soc ul li i:hover{
+     
+     color:blue
+     
+}
+footer .soc ul li .fa-instagram:hover{
+      color:#FC8204;
+}
+@media (max-width:586px){
+      footer h4{
+            font-size: 19px;
+            color:white;
+       }
+}
+/* @media (max-width:767px){
+      footer .soc ul li{
+            display: flex;
+           flex-direction: column;
+           margin-bottom: 15px;
+           border-bottom: 1px solid black;
+      }
+} */
+/* معجبتنيش اصلا/* */
+/*End ffoter*/
